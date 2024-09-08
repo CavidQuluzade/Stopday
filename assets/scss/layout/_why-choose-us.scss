@@ -1,0 +1,67 @@
+.why-choose-us {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      .image {
+        flex: 1;
+        
+        img {
+          max-width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+  
+      .content {
+        flex: 1.5;
+        padding-left: 50px;
+  
+        h2 {
+          font-size: 36px;
+          margin-bottom: 30px;
+          color: #000;
+        }
+  
+        .features {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+  
+          .feature {
+            display: flex;
+            align-items: flex-start;
+  
+            .icon {
+              background-color: #19AD6E;
+              color: white;
+              border-radius: 50%;
+              padding: 15px;
+              font-size: 40px;
+              margin-right: 20px;
+            }
+  
+            h3 {
+              font-size: 25px;
+              margin: 0;
+              color: #333;
+              display: block;
+            }
+  
+            p {
+              font-size: 18px;
+              color: #666;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
