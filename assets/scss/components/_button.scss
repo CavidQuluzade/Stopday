@@ -1,0 +1,12 @@
+$green: #00BD56;
+
+.card__container__row__col__button button {
+    height: 50px;
+    width: 200px;
+    display: block;
+    margin: 30px auto;
+    font-size: 20px;
+    background-color: $green;
+    border-color: $green;
+    border-radius: 10px;
+}
