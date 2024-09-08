@@ -1,99 +1,125 @@
 header {
-  display: flex;
-  flex-direction: column; 
+  width: 100%;
+  flex-direction: column;
   background: linear-gradient(to right, #2D80FC, #19AD6E);
-} 
+}
 
-  .header-1 {
+.header-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px;
+  background: linear-gradient(to right, #2D80FC, #19AD6E);
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.social-icons {
+  a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+}
+
+// Second header (logo + nav)
+.header-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #fff;
+  border-bottom: 2px solid #e0e0e0;
+
+  .logo {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 10px 0px; 
-    background: linear-gradient(to right, #2D80FC, #19AD6E); 
-    a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 16px;
-      margin-left: 10px;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:hover {
-        opacity: 0.8;
-      }
+    font-size: 24px;
+    font-weight: bold;
+
+    i {
+      color: #19AD6E;
+      margin-right: 8px;
+      font-size: 28px;
+    }
+
+    span {
+      color: #000;
     }
   }
 
-  .social-icons {
-    a {
-      color: #fff;
-      font-size: 20px;
-      transition: color 0.3s;
-      &:hover {
-        color: #ccc;
-      }
+  .main-nav {
+    .col2 {
+      display: none;
     }
   }
 
-  // Second header (logo + nav)
-  .header-2 {
+  .col1 ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 200px; 
-    background-color: #fff;
-    border-bottom: 2px solid #e0e0e0; 
+    gap: 20px;
+    margin: 0;
+    padding: 0;
 
-    .logo {
-      display: flex;
-      align-items: center;
-      font-size: 24px;
-      font-weight: bold;
-      i {
-        color: #19AD6E; 
-        margin-right: 8px;
-        font-size: 28px;
-      }
-      span {
+    li {
+      a {
+        text-decoration: none;
+        font-size: 16px;
         color: #000;
-      }
-    }
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 5px;
 
-    .main-nav {
-      ul {
-        list-style: none;
-        display: flex;
-        gap: 20px; 
-        margin: 0;
-        padding: 0;
+        &:hover,
+        &.active {
+          color: #19AD6E;
+        }
 
-        li {
-          a {
-            text-decoration: none;
-            font-size: 16px;
-            color: #000;
-            font-weight: 600;
-            position: relative;
-            padding-bottom: 5px;
-            &:hover,
-            &.active {
-              color: #19AD6E;
-            }
-            &.active {
-              &::after {
-                content: "";
-                position: absolute;
-                bottom: -3px;
-                left: 0;
-                right: 0;
-                height: 2px;
-                background-color: #19AD6E;
-                width: 100%;
-              }
-            }
+        &.active {
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #19AD6E;
+            width: 100%;
           }
         }
       }
     }
-  }
 
+    
+    
+  }
+  @include breakpoint(xl) {
+    
+    .main-nav .col1 {
+      display: none;
+    }
+
+    .main-nav .col2{
+      display: block;
+    }
+  }
+}

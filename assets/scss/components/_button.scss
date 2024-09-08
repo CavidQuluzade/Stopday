@@ -1,12 +1,23 @@
-$green: #00BD56;
 
-.card__container__row__col__button button {
+
+.card__container__row__col__button a {
     height: 50px;
     width: 200px;
     display: block;
-    margin: 30px auto;
+    margin: 10px auto;
     font-size: 20px;
     background-color: $green;
     border-color: $green;
-    border-radius: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    transition: .3s;
+}
+
+.card__container__row__col__button a:hover{
+    background-color:rgba(255, 255, 255, 0);
+    border: 1px solid $green;
+    color: $green;
 }

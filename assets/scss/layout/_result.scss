@@ -1,0 +1,32 @@
+#result {
+    height: 200px;
+    background-color: $green;
+
+    .results {
+        margin: 50px auto;
+        transform: translateY(25%);
+        width: 80%;
+        height: 200px;
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            justify-content: space-between;
+
+            .col-3 {
+                width: 200px;
+                h2{
+                    color: white;
+                    font-size: 50px;
+                }
+                p{
+                    padding-top: 15px;
+                    font-size: 17px;
+                    color: white;
+                }
+
+            }
+        }
+    }
+}

@@ -43,17 +43,3 @@
         }
     }
 }
-
-@mixin generate-btn($bgc, $hoverColor) {
-    background-color: $bgc;
-    border-radius: 25px;
-    border: none;
-    transition: .3s linear;
-    color: white;
-    padding: 12px 24px;
-    cursor: pointer;
-
-    &:hover{
-        background-color: $hoverColor;
-    }
-}
