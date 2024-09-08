@@ -213,4 +213,62 @@ header {
   height: 2px;
   background-color: #19AD6E;
   width: 100%;
+}
+
+.why-choose-us {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.why-choose-us .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.why-choose-us .container .image {
+  flex: 1;
+}
+.why-choose-us .container .image img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.why-choose-us .container .content {
+  flex: 1.5;
+  padding-left: 50px;
+}
+.why-choose-us .container .content h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #000;
+}
+.why-choose-us .container .content .features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.why-choose-us .container .content .features .feature {
+  display: flex;
+  align-items: flex-start;
+}
+.why-choose-us .container .content .features .feature .icon {
+  background-color: #19AD6E;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 40px;
+  margin-right: 20px;
+}
+.why-choose-us .container .content .features .feature h3 {
+  font-size: 25px;
+  margin: 0;
+  color: #333;
+  display: block;
+}
+.why-choose-us .container .content .features .feature p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 5px;
 }/*# sourceMappingURL=main.css.map */
